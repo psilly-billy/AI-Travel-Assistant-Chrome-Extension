@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner Assistant</title>
+  <link rel="stylesheet" href="styles/tailwind.min.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      margin: 0;
+    }
+    #itinerary-column, #entry-column {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+    .itinerary-card, .entry-card {
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+    .small-btn {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Left Column: Itineraries -->
+  <div id="itinerary-column" class="bg-white shadow">
+    <h1 class="text-lg font-bold text-gray-800 mb-4">Itineraries</h1>
+    <div id="itinerary-list">
+      <p class="text-sm text-gray-600">No itineraries available.</p>
+    </div>
+  </div>
+
+  <!-- Right Column: Saved Entries -->
+  <div id="entry-column" class="bg-gray-50 shadow">
+    <h1 class="text-lg font-bold text-gray-800 mb-4">Saved Entries</h1>
+    <div id="data-list">
+      <p class="text-sm text-gray-600">No data available.</p>
+    </div>
+  </div>
+
+  <script src="persistent.js"></script>
+  <script type="module" src="ai_popup.js"></script>
+</body>
+</html>

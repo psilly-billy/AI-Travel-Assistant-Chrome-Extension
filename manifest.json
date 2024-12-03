@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Travel Planner Assistant",
+  "version": "1.0",
+  "trial_tokens": ["AiyAzD/jNnKcu6gzBkgFwpHEBYUigoOw7lSxZlndNEv0caw222gTfYTl2jDRxbrfitDSP+h3dLFBXxywytKyMwUAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vcGZub2ZhZ2piYXBrZWVlaG1rcGdjcGxsbGdpbWRicGgiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"],
+  "permissions": ["scripting", "storage", "activeTab", "aiLanguageModelOriginTrial"],
+  "host_permissions": [
+    "https://*.skyscanner.net/*",
+    "https://*.booking.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://*.skyscanner.net/*", "https://*.booking.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
