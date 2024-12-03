@@ -51,6 +51,7 @@ git clone https://github.com/yourusername/ai-travel-assistant.git
    - `#optimization-guide-on-device-model`
    - **Prompt API for Gemini Nano**
    - *(Optional)* Enable all **Gemini Nano** features for full functionality.
+   - more details [here](https://docs.google.com/document/d/1VG8HIyz361zGduWgNG7R_R8Xkv0OOJ8b5C9QKeCjU0c/edit?tab=t.0#heading=h.an3xowp3af9e) 
 3. Restart the browser.
 
 ## How to Use
